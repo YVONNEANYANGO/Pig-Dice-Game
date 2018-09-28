@@ -5,12 +5,11 @@
         <title>PIG-DICE-GAME</title>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
+
       </head>
       <body>
         <div class="container">
-         <div id="About">
+         <div id="about">
               <h2>About</h2>
               <h1>Pig-Dice-Game</h1>
               <p><strong>Background Information about the Pig-Dice-Game</strong></p>
@@ -37,7 +36,7 @@
          </div>
 
          <div id="gameRules">
-          <h3>The rules of the Game</h3>
+          <h3><strong>The rules of the Game</strong></h3>
           <ul>
             <li>First player rolls the die as many times as he or she wants provided the die
               doesnt roll a 1</li>
@@ -47,8 +46,10 @@
             <li>The first player to score 100 points and above wins the game!!!</li>
            </ul>
            </div>
-           <button onclick="myFunction()">About</button>
-           <button onClick="myFunction()">Game Rules</button>
+         <div id="button">
+           <button id="aboutMenu">About</button>
+           <button id="gamesMenu">Game Rule</button>
+         </div>
            <h1>Try This Out!!!</h1>
            <p>Enter your names to begin playing:</p>
          <div class="container-panel-form">
@@ -76,9 +77,9 @@
               <div class="col-md-6">
                 <h4 class="firstPlayerNameOutput"></h4>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMfKZrPy-CHXxVjpljmqgemmBPsIPiBT7-Nlh4ZSP6kJEeYeO" alt="Image Icon for Player 1">
-                <p>Dice Roll: <span class="diceRoll1"></span></p>
-                <p>Turn Score: <span class="turnScore1"></span></p>
-                <p>Overall Score: <span class="overallScore1"></span></p>
+                <p><strong>Dice Roll: </strong><span class="diceRoll1"></span></p>
+                <p><strong>Turn Score: </strong><span class="turnScore1"></span></p>
+                <p><strong>Overall Score:<strong><span class="overallScore1"></span></p>
                 <button class="roll1 btn">ROLL</button>
                 <button class="hold1 btn">HOLD</button>
               </div>
@@ -86,9 +87,9 @@
           <div class="col-md-6">
              <h4 class="secondPlayerNameOutput"></h4>
              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMfKZrPy-CHXxVjpljmqgemmBPsIPiBT7-Nlh4ZSP6kJEeYeO" alt="Image Icon for Player 2">
-             <p>Dice Roll: <span class="diceRoll2"></span></p>
-             <p>Turn Score: <span class="turnScore2"></span></p>
-             <p>Overall Score: <span class="overallScore2"></span></p>
+             <p><strong>Dice Roll: </strong><span class="diceRoll2"></span></p>
+             <p><strong>Turn Score: </strong><span class="turnScore2"></span></p>
+             <p><strong>Overall Score:<strong><span class="overallScore2"></span></p>
              <button class="roll2 btn">ROLL</button>
              <button class="hold2 btn">HOLD</button>
            </div>
@@ -98,5 +99,12 @@
       </div>
      </div>
      </div>
+     <!-- <script type="text/javascript">
+     $("#aboutmenu").click(function() {
+         $("#about").toggle();
+     })
+     </script> -->
+     <script src="js/jquery-3.3.1.js"></script>
+     <script src="js/scripts.js"></script>
       </body>
     </html>

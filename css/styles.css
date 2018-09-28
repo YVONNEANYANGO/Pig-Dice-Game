@@ -1,6 +1,17 @@
-#About {
+#about {
   display: none;
 }
 #gameRules {
   display: none;
+}
+body {
+background-repeat: no repeat;
+background-size: cover;
+background-image :url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvqfmZE58BykuKkTinkQY2XuG0swja9dJbOrDERY1HR3C-SkZU");
+}
+#button {
+  padding :18px;
+  text-transform: uppercase;
+  display: block;
+  color:rgba(255,255,0.733);
 }
