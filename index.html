@@ -4,7 +4,10 @@
         <meta charset="utf-8">
         <title>PIG-DICE-GAME</title>
         <link rel="stylesheet" href="/css/styles.css" type="text/css">
-        
+        <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
+        <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+
       </head>
       <body>
         <h1>Pig-Dice-Game</h1>
@@ -37,21 +40,42 @@
             looses the points he or she accumulated in that turn and passes over to the second player</li>
             <li>The play goes round untill a winner is determined</li>
             <li>The first player to score 100 points and above wins the game!!!</li>
-          </ul>
-          <h1>Try This Out!!!</h1>
-          <p>Enter your names to begin playing:</p>
-          <form class="player-names">
+           </ul>
+           <h1>Try This Out!!!</h1>
+           <p>Enter your names to begin playing:</p>
+           <form class="player-names">
             <div class="row">
-              <div class="col-md-6">
+              <portion class="col-md-6">
                 <label for="first-player">First Player</label>
-                <input type="text" name="first player" value="">
-              </div>
-               <div class="row">
-                <div class="col-md-6">
+                <input type="text" name="firstPlayer" value="">
+              </portion>
+               <portion class="col-md-6">
                 <label for="second-player">Second Player</label>
-                <input type="text" name="second player" value="">
-               </div>
+                <input type="text" name="secondPlayer" value="">
+              </portion>
             </div>
-          </form>
+            <button type="submit" class="btn" id="play Button">Play</button>
+        </form>
+        <section id="playGround" class="row">
+         <portion class="col-md-6 firstPlayerGround">
+             <h4 class="firstPlayerNameOutput"></h4>
+             <img src="" alt="Image Icon for Player 1">
+             <p>Dice Roll: <span class="diceRoll1"></span></p>
+             <p>Turn Score: <span class="turnScore1"></span></p>
+             <p>Overall Score: <span class="overallScore1"></span></p>
+             <button class="roll1 btn">ROLL</button>
+             <button class="hold1 btn">HOLD</button>
+         </portion>
+         <portion class="col-md-6 secondPlayerGround">
+             <h4 class="secondPlayerNameOutput"></h4>
+             <img src="" alt="Image Icon for Player 2">
+             <p>Dice Roll: <span class="diceRoll2"></span></p>
+             <p>Turn Score: <span class="turnScore2"></span></p>
+             <p>Overall Score: <span class="overallScore2"></span></p>
+             <button class="roll2 btn">ROLL</button>
+             <button class="hold2 btn">HOLD</button>
+          </portion>
+       </section>
+
       </body>
     </html>
