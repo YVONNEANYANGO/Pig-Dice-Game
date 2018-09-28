@@ -11,6 +11,23 @@
 //   $("#about").toggle();
 //   alert('lkdnkgnlk')
 // });
+//Business Logic
+function pigDiceGame() {
+  this.trialPoints = 0;
+  this.totalPoints = 0;
+  this.winning
+}
+
+
+
+
+
+
+
+
+
+
+
 $("#aboutMenu").click(function() {
     $("#about").toggle();
 })

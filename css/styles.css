@@ -13,5 +13,23 @@ background-image :url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvq
   padding :18px;
   text-transform: uppercase;
   display: block;
-  color:rgba(255,255,0.733);
+
+}
+#aboutMenu {
+  color :blue;
+}
+#gamesMenu {
+  color :blue;
+}
+.roll1 {
+  color :blue;
+}
+.hold2 {
+  color :purple;
+}
+.roll2 {
+  color :blue;
+}
+.hold1 {
+  color :purple;
 }
