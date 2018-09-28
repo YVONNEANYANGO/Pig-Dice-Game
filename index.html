@@ -3,35 +3,38 @@
       <head>
         <meta charset="utf-8">
         <title>PIG-DICE-GAME</title>
-        <link rel="stylesheet" href="/css/styles.css" type="text/css">
-        <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
-        <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
-
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
       </head>
       <body>
-        <h1>Pig-Dice-Game</h1>
-        <p><strong>Background Information about the Pig-Dice-Game</strong></p>
-        <p>Pig-Dice is a simple and interesting game played mostly by children in South America and
-          other parts of the world.
-          The other name for the game is Ambition.The game can be played by two users playing agains
-          each other.</p>
-        <h2>Pig Dice Variants</h2>
-        <p>Just like any other game pig dice also has several variants.The following represents
-          the three types of variants</p>
-              <ul>
-                <li>Two Dice Pig: When a player rolls two dice and one of the die is a 1, she loses the points just for that turn.
-                    If she rolls double 1s, she loses his total score!
-                </li>
-                <li>Big Pig: When a player rolls two dice and one of the die is a 1, she loses the points just for that turn.
-                    If she rolls double 1s, she adds 25 to her score, but must roll again!
-                </li>
-                <li>Big Pig variation: When a player rolls two dice and one of the die is a 1, she loses the points just for that turn.
-                     If she rolls double 1s, she adds 25 to her score. If she rolls any other doubles, she adds a double score to her total.
-                     After rolling a double, player must roll again.</p>
-                </li>
-              </ul>
-         <p>Pig dice players can either choose to play either the easy or hard levels.</p>
+        <div class="container">
+          <div id="About">
+              <h1>Pig-Dice-Game</h1>
+              <p><strong>Background Information about the Pig-Dice-Game</strong></p>
+              <p>Pig-Dice is a simple and interesting game played mostly by children in South America and
+                other parts of the world.
+                The other name for the game is Ambition.The game can be played by two users playing agains
+                each other.</p>
+              <h2>Pig Dice Variants</h2>
+              <p>Just like any other game pig dice also has several variants.The following represents
+                the three types of variants</p>
+                  <ul>
+                    <li>Two Dice Pig: When a player rolls two dice and one of the die is a 1, she loses the points just for that turn.
+                          If she rolls double 1s, she loses his total score!
+                    </li>
+                    <li>Big Pig: When a player rolls two dice and one of the die is a 1, she loses the points just for that turn.
+                          If she rolls double 1s, she adds 25 to her score, but must roll again!
+                    </li>
+                    <li>Big Pig variation: When a player rolls two dice and one of the die is a 1, she loses the points just for that turn.
+                           If she rolls double 1s, she adds 25 to her score. If she rolls any other doubles, she adds a double score to her total.
+                           After rolling a double, player must roll again.</p>
+                    </li>
+                  </ul>
+               <p>Pig dice players can either choose to play either the easy or hard levels.</p>
+        </div>
+        <div id="Game Rules">
           <h3>The rules of the Game</h3>
           <ul>
             <li>First player rolls the die as many times as he or she wants provided the die
@@ -41,41 +44,55 @@
             <li>The play goes round untill a winner is determined</li>
             <li>The first player to score 100 points and above wins the game!!!</li>
            </ul>
+         </div>
            <h1>Try This Out!!!</h1>
            <p>Enter your names to begin playing:</p>
-           <form class="player-names">
-            <div class="row">
-              <portion class="col-md-6">
-                <label for="first-player">First Player</label>
+           <div class="container-panel-form">
+           <div class="row">
+             <div class="col-md-6">
+               <p>First Player</p>
+                <form class="player-names">
+                  <div class="first-player">
+                <label for="first-player"></label>
                 <input type="text" name="firstPlayer" value="">
-              </portion>
-               <portion class="col-md-6">
-                <label for="second-player">Second Player</label>
-                <input type="text" name="secondPlayer" value="">
-              </portion>
+              </div>
             </div>
-            <button type="submit" class="btn" id="play Button">Play</button>
-        </form>
-        <section id="playGround" class="row">
-         <portion class="col-md-6 firstPlayerGround">
-             <h4 class="firstPlayerNameOutput"></h4>
-             <img src="" alt="Image Icon for Player 1">
-             <p>Dice Roll: <span class="diceRoll1"></span></p>
-             <p>Turn Score: <span class="turnScore1"></span></p>
-             <p>Overall Score: <span class="overallScore1"></span></p>
-             <button class="roll1 btn">ROLL</button>
-             <button class="hold1 btn">HOLD</button>
-         </portion>
-         <portion class="col-md-6 secondPlayerGround">
+            <div class="col-md-6">
+              <p>Second Player</p>
+              <div class="second-player">
+                <label for="second-player"></label>
+                <input type="text" name="secondPlayer" value="">
+              </div>
+                <button type="submit" class="btn" id="play Button"><span Play></button></span>
+              </form>
+            </div>
+          </div>
+            <div id="playGround">
+            <div class="row">
+              <div class="col-md-6">
+                <h4 class="firstPlayerNameOutput"></h4>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMfKZrPy-CHXxVjpljmqgemmBPsIPiBT7-Nlh4ZSP6kJEeYeO" alt="Image Icon for Player 1">
+                <p>Dice Roll: <span class="diceRoll1"></span></p>
+                <p>Turn Score: <span class="turnScore1"></span></p>
+                <p>Overall Score: <span class="overallScore1"></span></p>
+                <button class="roll1 btn">ROLL</button>
+                <button class="hold1 btn">HOLD</button>
+              </div>
+
+          <div class="col-md-6">
              <h4 class="secondPlayerNameOutput"></h4>
-             <img src="" alt="Image Icon for Player 2">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMfKZrPy-CHXxVjpljmqgemmBPsIPiBT7-Nlh4ZSP6kJEeYeO" alt="Image Icon for Player 2">
              <p>Dice Roll: <span class="diceRoll2"></span></p>
              <p>Turn Score: <span class="turnScore2"></span></p>
              <p>Overall Score: <span class="overallScore2"></span></p>
              <button class="roll2 btn">ROLL</button>
              <button class="hold2 btn">HOLD</button>
-          </portion>
-       </section>
+           </div>
 
+              </div>
+        </div>
+      </div>
+     </div>
+     </div>
       </body>
     </html>
