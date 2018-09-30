@@ -22,8 +22,48 @@ function pigDiceGame() {
 $(document).ready(function() {
   $("#playButton").click(function(event) {
     event.preventDefault();
+    firstPlayer = $("#firstPlayerName").val();
+    secondPlayer = $("#secondPlayerName").val();
+    $("#playerinfo").hide();
+    $("#game-container").show();
+    $(".rule").hide()
   })
 })
+
+// display input
+$("#startPlayFirstPlayerName").text(firstPlayer);
+$("#startPlaySecondPlayerName").text(secondPlayer);
+
+firstPlayerBegins = new playGame();
+secondPlayerBegins = new playGame();
+
+});
+
+//firstPlayerRoll
+$("#roll-dice-button1").click(function() {
+  var rolled = player1Stats.roll();
+  player1Stats.turnScore += rolled;
+  if (rolled == 1) {
+    player1Stats.turnScore = 0;
+    $("#stats-turn-score1").text(player1Stats.turnScore);
+    $("#play1").hide()
+    $("#play2").show()
+
+  }
+
+  $("#stats-turn-score1").text(player1Stats.turnScore);
+  $("#stats-player-1-total-score1").text(player1Stats.totalScore);
+
+});
+$("#hold-button1").click(function() {
+  player1Stats.totalScore += player1Stats.turnScore;
+  player1Stats.turnScore = 0;
+  $("#stats-player-1-total-score").text(player1Stats.totalScore);
+  $("#stats-turn-score1").text(player1Stats.turnScore);
+  $("#play1").hide()
+  $("#play2").show()
+
+});
 // player.prototype.roll = function () {
 //   var randomNumber = math.floor ((math.random()*6)+1);
 //   this.diceRoll = randomNumber;
@@ -32,33 +72,33 @@ $(document).ready(function() {
 //   }
 // }
 
-/business logic
-function gameplayer() {
- this.turnScore = 0;
- this.totalScore = 0;
- this.winningScore = 100;
- this.roll = function() {
-   return Math.floor(Math.random() * 6) + 1;
- }
-}
+// /business logic
+// function gameplayer() {
+//  this.turnScore = 0;
+//  this.totalScore = 0;
+//  this.winningScore = 100;
+//  this.roll = function() {
+//    return Math.floor(Math.random() * 6) + 1;
+//  }
+// }
 
 
 
-//UI logic
-$(document).ready(function() {
- $("#button").click(function() {
-   $(".rule").toggle()
- });
- $("#game-container").hide();
-
- $("#start-game-button").click(function(event) {
-   event.preventDefault();
-
-   player1 = $("#player1Name").val();
-   player2 = $("#player2Name").val();
-   $("#playerinfo").hide();
-   $("#game-container").show();
-   $(".rule").hide()
+// //UI logic
+// $(document).ready(function() {
+//  $("#button").click(function() {
+//    $(".rule").toggle()
+//  });
+//  $("#game-container").hide();
+//
+//  $("#start-game-button").click(function(event) {
+//    event.preventDefault();
+//
+//    player1 = $("#player1Name").val();
+//    player2 = $("#player2Name").val();
+//    $("#playerinfo").hide();
+//    $("#game-container").show();
+//    $(".rule").hide()
 
 
    // display input
