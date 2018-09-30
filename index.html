@@ -4,20 +4,20 @@
         <meta charset="utf-8">
         <title>PIG-DICE-GAME</title>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
 
       </head>
       <body>
-        <div class="container">
+       <div class="container">
          <div id="about">
               <h2><strong>ABOUT</strong></h2>
-              <h1>Pig-Dice-Game</h1>
+              <h1><strong>Pig-Dice-Game<strong></h1>
               <p><strong>Background Information about the Pig-Dice-Game</strong></p>
               <p>Pig-Dice is a simple and interesting game played mostly by children in South America and
                 other parts of the world.
                 The other name for the game is Ambition.The game can be played by two users playing agains
                 each other.</p>
-              <h2>Pig Dice Variants</h2>
+              <h2><strong>Pig Dice Variants</strong></h2>
               <p>Just like any other game pig dice also has several variants.The following represents
                 the three types of variants</p>
                 <ul>
@@ -33,10 +33,10 @@
                   </li>
                 </ul>
                 <p>Pig dice players can either choose to play either the easy or hard levels.</p>
-         </div>
+          </div>
 
-         <div id="gameRules">
-           <h3><strong>Game Rules<strong></h3>
+          <div id="gameRules">
+          <h3><strong>Game Rules<strong></h3>
           <p><strong>The rules of the Game</strong></p>
           <ul>
             <li>First player rolls the die as many times as he or she wants provided the die
@@ -48,11 +48,11 @@
            </ul>
            </div>
          <div id="button">
-           <button id="aboutMenu">About</button>
-           <button id="gamesMenu">Game Rule</button>
+          <button id="aboutMenu">About</button>
+          <button id="gamesMenu">Game Rule</button>
          </div>
-           <h1>Try This Out!!!</h1>
-           <p>Enter your names to begin playing:</p>
+         <h4><strong>Try This Out!!!</strong></h4>
+         <p>Enter your names to begin playing:</p>
          <div class="container-panel-form">
            <div class="row">
              <div class="col-md-6">
@@ -60,46 +60,47 @@
                 <form class="player-names">
                   <div class="first-player">
                 <label for="first-player"></label>
-                <input type="text" name="firstPlayer" value="">
+                <input type="text" id="firstPlayer" value="">
               </div>
             </div>
             <div class="col-md-6">
               <p>SECOND PLAYER</p>
               <div class="second-player">
                 <label for="second-player"></label>
-                <input type="text" name="secondPlayer" value="">
+                <input type="text" id="secondPlayer" value="">
               </div>
-                <button type="submit" class="btn" id="play Button"><span Play></button></span>
+              <button type="submit" class="btn" id="playButton"><strong>Start Play</strong></button>
               </form>
             </div>
           </div>
-            <div id="playGround">
-            <div class="row">
+          <div id="playGround">
+           <div class="row">
               <div class="col-md-6">
                 <h4 class="firstPlayerNameOutput"></h4>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMfKZrPy-CHXxVjpljmqgemmBPsIPiBT7-Nlh4ZSP6kJEeYeO" alt="Image Icon for Player 1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMfKZrPy-CHXxVjpljmqgemmBPsIPiBT7-Nlh4ZSP6kJEeYeO" height ="250" width="350" alt="Image Icon for firstPlayer">
+                <br>
                 <p><strong>Dice Roll: </strong><span class="diceRoll1"></span></p>
                 <p><strong>Turn Score: </strong><span class="turnScore1"></span></p>
                 <p><strong>Overall Score:<strong><span class="overallScore1"></span></p>
                 <button class="roll1 btn"><strong>ROLL</strong></button>
                 <button class="hold1 btn"><strong>HOLD</strong></button>
               </div>
+              <div class="col-md-6">
+               <h4 class="secondPlayerNameOutput"></h4>
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMfKZrPy-CHXxVjpljmqgemmBPsIPiBT7-Nlh4ZSP6kJEeYeO" height ="250" width ="350" alt="Image Icon for secondPlayer">
+               <br>
+               <p><strong>Dice Roll: </strong><span class="diceRoll2"></span></p>
 
-          <div class="col-md-6">
-             <h4 class="secondPlayerNameOutput"></h4>
-             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMfKZrPy-CHXxVjpljmqgemmBPsIPiBT7-Nlh4ZSP6kJEeYeO" alt="Image Icon for Player 2">
-             <p><strong>Dice Roll: </strong><span class="diceRoll2"></span></p>
-             <p><strong>Turn Score: </strong><span class="turnScore2"></span></p>
-             <p><strong>Overall Score:<strong><span class="overallScore2"></span></p>
-             <button class="roll2 btn"><strong>ROLL</strong></button>
-             <button class="hold2 btn"><strong>HOLD</strong></button>
-           </div>
-
+               <p><strong>Turn Score: </strong><span class="turnScore2"></span></p>
+               <p><strong>Overall Score:<strong><span class="overallScore2"></span></p>
+               <button class="roll2 btn"><strong>ROLL</strong></button>
+               <button class="hold2 btn"><strong>HOLD</strong></button>
               </div>
+            </div>
+          </div>
         </div>
       </div>
-     </div>
-     </div>
+    </div>
      <!-- <script type="text/javascript">
      $("#aboutmenu").click(function() {
          $("#about").toggle();
@@ -107,5 +108,5 @@
      </script> -->
      <script src="js/jquery-3.3.1.js"></script>
      <script src="js/scripts.js"></script>
-      </body>
-    </html>
+ </body>
+</html>
