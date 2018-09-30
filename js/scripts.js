@@ -40,28 +40,28 @@ secondPlayerBegins = new playGame();
 });
 
 //firstPlayerRoll
-$("#roll-dice-button1").click(function() {
-  var rolled = player1Stats.roll();
-  player1Stats.turnScore += rolled;
+$(".rollOne").click(function() {
+  var rolled = firstPlayerBegins.roll();
+  firstPlayerBegins.turnScore += rolled;
   if (rolled == 1) {
-    player1Stats.turnScore = 0;
-    $("#stats-turn-score1").text(player1Stats.turnScore);
-    $("#play1").hide()
-    $("#play2").show()
+    firstPlayerBegins.turnScore = 0;
+    $(".turnScoreOne").text(firstPlayerBegins.turnScore);
+    $("#firstPlayer").hide()
+    $("#secondPlayer").show()
 
   }
 
-  $("#stats-turn-score1").text(player1Stats.turnScore);
-  $("#stats-player-1-total-score1").text(player1Stats.totalScore);
+  $(".turnScoreOne").text(firstPlayerBegins.turnScore);
+  $(".overallScoreOne").text(player1Stats.totalScore);
 
 });
-$("#hold-button1").click(function() {
-  player1Stats.totalScore += player1Stats.turnScore;
-  player1Stats.turnScore = 0;
-  $("#stats-player-1-total-score").text(player1Stats.totalScore);
-  $("#stats-turn-score1").text(player1Stats.turnScore);
-  $("#play1").hide()
-  $("#play2").show()
+$(".holdOne").click(function() {
+  firstPlayerBegins.overallScore += firstPlayerBegins.turnScore;
+  firstPlayerBegins.turnScore = 0;
+  $(".overallScoreOne").text(firstPlayerBegins.overallScore);
+  $(".turnScoreOne").text(player1Stats.turnScore);
+  $("#firstPlayer").hide()
+  $("#secondPlayer").show()
 
 });
 // player.prototype.roll = function () {
@@ -102,38 +102,38 @@ $("#hold-button1").click(function() {
 
 
    // display input
-   $("#gameStartPlayer1Name").text(player1);
-   $("#gameStartPlayer2Name").text(player2);
-
-   player1Stats = new gameplayer();
-   player2Stats = new gameplayer();
-
- });
- //player1roll
- $("#roll-dice-button1").click(function() {
-   var rolled = player1Stats.roll();
-   player1Stats.turnScore += rolled;
-   if (rolled == 1) {
-     player1Stats.turnScore = 0;
-     $("#stats-turn-score1").text(player1Stats.turnScore);
-     $("#play1").hide()
-     $("#play2").show()
-
-   }
-
-   $("#stats-turn-score1").text(player1Stats.turnScore);
-   $("#stats-player-1-total-score1").text(player1Stats.totalScore);
-
- });
- $("#hold-button1").click(function() {
-   player1Stats.totalScore += player1Stats.turnScore;
-   player1Stats.turnScore = 0;
-   $("#stats-player-1-total-score").text(player1Stats.totalScore);
-   $("#stats-turn-score1").text(player1Stats.turnScore);
-   $("#play1").hide()
-   $("#play2").show()
-
- });
+ //   $("#gameStartPlayer1Name").text(player1);
+ //   $("#gameStartPlayer2Name").text(player2);
+ //
+ //   player1Stats = new gameplayer();
+ //   player2Stats = new gameplayer();
+ //
+ // });
+ // //player1roll
+ // $("#roll-dice-button1").click(function() {
+ //   var rolled = player1Stats.roll();
+ //   player1Stats.turnScore += rolled;
+ //   if (rolled == 1) {
+ //     player1Stats.turnScore = 0;
+ //     $("#stats-turn-score1").text(player1Stats.turnScore);
+ //     $("#play1").hide()
+ //     $("#play2").show()
+ //
+ //   }
+ //
+ //   $("#stats-turn-score1").text(player1Stats.turnScore);
+ //   $("#stats-player-1-total-score1").text(player1Stats.totalScore);
+ //
+ // });
+ // $("#hold-button1").click(function() {
+ //   player1Stats.totalScore += player1Stats.turnScore;
+ //   player1Stats.turnScore = 0;
+ //   $("#stats-player-1-total-score").text(player1Stats.totalScore);
+ //   $("#stats-turn-score1").text(player1Stats.turnScore);
+ //   $("#play1").hide()
+ //   $("#play2").show()
+ //
+ // });
  //player2 roll
  $("#roll-dice-button2").click(function() {
    var rolled = player2Stats.roll();
