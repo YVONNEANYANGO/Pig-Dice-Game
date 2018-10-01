@@ -25,16 +25,12 @@ Yvonne Anyango
 No known bugs
 
 ##### Behavior Driven Development (BDD)
-       Behavior            |   Possible Rolls       |   Expected Results  |
----------------------------|----------------------- |---------------------|
-  Zero Score               |  roll 1 or double 1    |  0 points           |
-  Score of 2,3,4,5 and 6   |  roll 2,3,4,5 or 6     |  Earns 2,3,4,5      |
-                           |   respectively         |  and 6 points       |
-                           |                        |     respectively    |
-
-
-
-
+|       Behavior           |   Possible Rolls                 |   Expected Results                       |
+|--------------------------|----------------------------------|------------------------------------------|
+| Zero Score               |  roll 1 or double 1              |  0 points                                |
+|  Score of 2,3,4,5 and 6  |  roll 2,3,4,5 or 6 respectively  |  Earns 2,3,4,5 and 6 points respectively |
+|                          |                                  |                                          |
+                                                         
 ##### Support and contact details
 *  Email Address :ivonnahbonswuh@gmail.com
 
