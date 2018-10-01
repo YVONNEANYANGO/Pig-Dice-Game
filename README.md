@@ -18,8 +18,8 @@ Yvonne Anyango
 *  jQuery
 *  Command-line
 
-##### Set-up/Installation Requirements
-*  Type in this url ("")  
+##### Live Demonstration
+*  Type in this url ("https://yvonneanyango.github.io/Pig-Dice-Game/")  
 
 ##### Known bugs
 No known bugs
@@ -30,11 +30,7 @@ No known bugs
 | Zero Score               |  roll 1 or double 1              |  0 points                                |
 |  Score of 2,3,4,5 and 6  |  roll 2,3,4,5 or 6 respectively  |  Earns 2,3,4,5 and 6 points respectively |
 |                          |                                  |                                          |
-                                                          
-                                                                                    
-
-
-
+                                                         
 ##### Support and contact details
 *  Email Address :ivonnahbonswuh@gmail.com
 
