@@ -18,19 +18,19 @@ Yvonne Anyango
 *  jQuery
 *  Command-line
 
-##### Set-up/Installation Requirements
-*  Type in this url ("")  
+##### Live Demonstration
+*  Type in this url ("https://yvonneanyango.github.io/Pig-Dice-Game/")  
 
 ##### Known bugs
 No known bugs
 
 ##### Behavior Driven Development (BDD)
-|      Behavior             |   Possible Rolls       |  Expected Results   |
-|-------------------------- |------------------------|---------------------|
-|  Zero Score               |  roll 1 or double 1    |  0 points           |
-|  Score of 2,3,4,5 and 6   |  roll 2,3,4,5 or 6     |  Earns 2,3,4,5      |
-|                           |   respectively         |  and 6 points       |
-|                           |                        |     respectively    |
+       Behavior            |   Possible Rolls       |   Expected Results  |
+---------------------------|----------------------- |---------------------|
+  Zero Score               |  roll 1 or double 1    |  0 points           |
+  Score of 2,3,4,5 and 6   |  roll 2,3,4,5 or 6     |  Earns 2,3,4,5      |
+                           |   respectively         |  and 6 points       |
+                           |                        |     respectively    |
 
 
 
