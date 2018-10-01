@@ -16,6 +16,7 @@ Yvonne Anyango
 *  javaScript
 *  Bootstrap
 *  jQuery
+*  Command-line
 
 ##### Set-up/Installation Requirements
 *  Type in this url ("")  
@@ -24,16 +25,14 @@ Yvonne Anyango
 No known bugs
 
 ##### Behavior Driven Development (BDD)
-Possible Answers               |   Correct answers                       |   Expected Results  |
------------------------------  |-----------------------------------------|---------------------|
-Question one: choice 1,2 or 3  |  Makes debugging easier                 |      5marks or 0    |
-Question two: choice 1,2 or 3  |  Character                              |      5marks or 0    |
-Question three: choice 1,2 or 3|  A box that allows users to enter their |      5marks or 0    |
-                               |  inputs by providing a text box         |                     |
-Question four choice: 1,2 or 3 |  user interface                         |      5marks or 0    |
-Question five choice: 1,2 or 3 |  Returns true if the argument is not a  |      5marks or 0    |
-                               |  number otherwise it is false           |                     |
-Question six choice: 1,2 or 3  |  //                                     |      5marks or 0    |
+       Behavior            |   Possible Rolls       |   Expected Results  |
+---------------------------|----------------------- |---------------------|
+  Zero Score               |  roll 1 or double 1    |  0 points           |
+  Score of 2,3,4,5 and 6   |  roll 2,3,4,5 or 6     |  Earns 2,3,4,5      |
+                           |   respectively         |  and 6 points       |
+                           |                        |     respectively    |
+                           |                        |                     |            
+
 
 
 ##### Support and contact details
